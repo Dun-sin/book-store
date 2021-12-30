@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
 	}
 	try {
 		const books = await query.exec();
-		res.render('/views/books/index.ejs', {
+		res.render('books/index', {
 			books: books,
 			searchOptions: req.query,
 		});
