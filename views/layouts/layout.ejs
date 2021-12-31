@@ -12,6 +12,7 @@
 			href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="/stylesheets/main.css" />
 		<script
 			defer
 			src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"
@@ -29,7 +30,11 @@
 		<title>Mybrary</title>
 	</head>
 	<body>
-		<%- include('../partials/header.ejs') %> <%-
-		include('../partials/errorMessage.ejs') %> <%- body %>
+		<div class="container">
+			<%- include('../partials/header.ejs') %>
+			<div class="inner-container">
+				<%- include('../partials/errorMessage.ejs') %> <%- body %>
+			</div>
+		</div>
 	</body>
 </html>
